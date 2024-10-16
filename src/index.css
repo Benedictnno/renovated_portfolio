@@ -9,6 +9,7 @@
   --main-color3:#2d4356 ;
   --main-color4:#89aac3 ;
   --big-fonts:2.5rem;
+  --madium-fonts:2.5rem;
   --small-fonts:1.5rem;
   --main-font-family: 'Alkatra', cursive;
   --title-font-family: 'Lato', sans-serif;
@@ -197,6 +198,10 @@ white-space: nowrap;
 }
 
 .stack{
+display: flex;
+ flex-wrap: wrap;
+ flex-grow: inherit;
+ 
   font-size: var(--small-fonts);
 }
 
@@ -645,13 +650,65 @@ color:#fff;
 .contact_icon{
   padding-right: -0.5rem;
 }
+.Top_Icons{
+  font-size: 2.2rem;
+  display: flex;
+ flex: row;
+ border:none;
+ column-gap: 1rem;
+}
+.Top_Icons>a{
+  text-decoration: none;
+  color: var(--main-color1);
+}
+
+.more_details{
+  display: flex;
+  justify-content: space-between;
+}
+
+.more_details>a{
+  align-self: center;
+  margin-right: 1rem;
+}
+.small_screen{
+  list-style: none;
+  margin-left: -5rem;
+  margin-top: -2rem;
+}
+.small_screen>li>a{
+  text-decoration: none; 
+  font: 1.1em sans-serif;
+}
+.contact_Top_small{
+ background-color: var(--main-color4);
+  border-radius: 10px;
+  text-align: center;
+  justify-self: flex-end;
+  align-self: center;
+  font-size:1rem;
+padding:.5rem .75rem;
+color:#fff;
+}
+.logo_text_small{
+  text-decoration: none;
+  font-family: var(--styled-font-family);
+   font-size:1.3rem;
+  
+  /* color: var( --main-color1); */
+
+}
+
 @media screen and (max-width: 768px) {
   .Stack_contain {
       display: grid;
       grid-template-columns: repeat(2,6fr );
+      flex-wrap: wrap;
       place-items: center;
       color: var(--main-color3);
       font-weight: 600;
+      gap:.2rem ;
+      margin-top: 1rem;
     }
   .top_image {
     display: none;

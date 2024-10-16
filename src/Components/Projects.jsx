@@ -9,6 +9,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Modal from "react-modal";
 import { AiOutlineClose } from "react-icons/ai";
+import { LuArrowUpRightSquare } from "react-icons/lu";
+
 const Projects = () => {
   const [idT, setId] = useState(false);
 
@@ -137,20 +139,25 @@ const Projects = () => {
       <h1 className="">Projects</h1>
       <section>
         <article className="project_container">
-          {Project.map(({ image, title, id }) => {
+          {Project.map(({ image, title, id ,link}) => {
             return (
               <div className="mainp_container " key={id} data-aos="fade-up">
                 <img src={image} alt={title} data-aos="zoom-in" />
                 <div className="btn_container">
                   <h3>{title}</h3>
-                  <button
-                    onClick={() => {
-                      setId(id), openModal();
-                    }}
-                    className="p_btn"
-                  >
-                    More Details
-                  </button>
+                  <div className="more_details">
+                    <button
+                      onClick={() => {
+                        setId(id), openModal();
+                      }}
+                      className="p_btn"
+                    >
+                      More Details
+                    </button>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      <LuArrowUpRightSquare size={32} color={"#0a1334"} />
+                    </a>
+                  </div>
                 </div>
               </div>
             );

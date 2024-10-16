@@ -3,16 +3,13 @@ import { FaHtml5, FaReact, FaFigma } from "react-icons/fa";
 import { BsFiletypeCss } from "react-icons/bs";
 import { SiJavascript, SiRedux, SiFirebase } from "react-icons/si";
 import Me from "./../images/my_image_2.jpg";
-
+import { FaNode } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 const About = () => {
   const teach = [
     {
-      logo: <FaHtml5 />,
-      text: "HTML",
-    },
-    {
-      logo: <BsFiletypeCss />,
-      text: "CSS",
+      logo: <SiTailwindcss />,
+      text: "Tail wind css",
     },
 
     {
@@ -28,8 +25,12 @@ const About = () => {
       text: "React Redux",
     },
     {
-      logo: <FaFigma />,
-      text: "figma",
+      logo: <SiNextdotjs />,
+      text: "Next.js",
+    },
+    {
+      logo: <FaNode size={40} />,
+      text: "Node js",
     },
     {
       logo: <SiFirebase />,
@@ -43,13 +44,13 @@ const About = () => {
         <img src={Me} alt="" />
         <div>
           <p>
-            Hey there! I'm Benedict Nnaoma, a passionate Frontend developer with
+            Hey there! I'm Benedict Nnaoma, a passionate Fullstack web developer with
             2+ years of experience. I create visually stunning and user-friendly
             digital experiences. I blend aesthetics with functionality to bring
             visions to life. I've developed e-commerce platforms, responsive
             websites, and intuitive interfaces for web applications. When I'm
             not designing, I enjoy playing chess and reading self development
-            books. Let's collaborate! Reach out to me at
+            books. Let's collaborate! Reach out to me at <span> </span>
             <a href="https://benedictnnaoma0@gmail.com" target="_blank">
               benedictnnaoma0@gmail.com
             </a>{" "}

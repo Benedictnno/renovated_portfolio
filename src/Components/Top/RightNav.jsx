@@ -62,11 +62,11 @@ const RightNav = () => {
           </a>
 
           <div className=" large_screen2">
+            <a href="#about">About me</a>
+            <a href="#services">Services</a>
             <a href="#project" className="">
               Projects
             </a>
-            <a href="#skill">Skill Set</a>
-            <a href="#about">About me</a>
             {/* <div className=" ">
             <p>Download eeffffffvResume</p>
             {/* <FaGithub size={25} /> */}
@@ -74,7 +74,7 @@ const RightNav = () => {
           </div> */}
           </div>
 
-          <a href="#contact" className="contact_Top">
+          <a href="#contact" className="contact_Top"  onClick={() => setOpen(false)}>
             {/* <LuDot color="#fff" size={40} /> */}
             <span>Contact Developer</span>
             <FiArrowUpRight />
@@ -85,14 +85,20 @@ const RightNav = () => {
       {/* small screens */}
       <ul className="small_screen">
         <div className="">
-          <a to={"/"} className=" ">
-            Nnaoma Benedict
+          <a href="/" className="logo_text_small" onClick={() => setOpen(false)}>
+            Benedict's Portfolio
           </a>
           {/* <IoIosMenu /> */}
         </div>
         <li>
           <a href="#about" onClick={() => setOpen(false)}>
-            About
+            About me
+          </a>
+        </li>
+
+        <li>
+          <a href="#services" onClick={() => setOpen(false)}>
+            services
           </a>
         </li>
 
@@ -103,8 +109,10 @@ const RightNav = () => {
         </li>
 
         <li>
-          <a href="#contact" onClick={() => setOpen(false)}>
-            Contact Developer
+          <a href="#contact" className="contact_Top_small" onClick={() => setOpen(false)}>
+            {/* <LuDot color="#fff" size={40} /> */}
+            <span>Contact Developer</span>
+            <FiArrowUpRight />
           </a>
         </li>
       </ul>

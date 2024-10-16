@@ -36,11 +36,29 @@ const Top = () => {
                 Download Resume
               </a>
             </button>
-            <button type="button " className="contact   ">
-              <RiTwitterXFill />
-              <FaGithub />
-              <IoLogoLinkedin />
+            <button type="button " className="Top_Icons  ">
+              <a
+                href="https://github.com/Benedictnno"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://x.com/BenedictNnaoma"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <RiTwitterXFill />
+              </a>
 
+              <a
+                href="https://www.linkedin.com/in/benedict-nnaoma-73285a242/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IoLogoLinkedin />
+              </a>
             </button>
           </div>
         </section>

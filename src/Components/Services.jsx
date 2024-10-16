@@ -17,13 +17,13 @@ const Services = () => {
       icon: <FaReact />,
     },
     {
-      title: "Backend with Firebase",
-      text: "As an experienced Frontend Web Developer, I use Firebase to build robust and scalable web applications. It's a powerful cloud-based platform that streamlines development, enabling me to focus on creating innovative features.",
+      title: "Backend with Node.js(Express.js) & Firebase",
+      text: "As an experienced Frontend Web Developer, I use  Express.js & Firebase to build robust and scalable web applications. Firebase is a powerful cloud-based platform that streamlines development, enabling me to focus on creating innovative features.",
       icon: <SiFirebase />,
     },
   ];
   return (
-    <section className="services">
+    <section className="services" id="services">
       <h1>Services</h1>
       <article className="services_container">
         {data.map(({ title, text, icon }, index) => {
